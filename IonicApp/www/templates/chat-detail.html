@@ -1,0 +1,32 @@
+<ion-view view-title="{{user.name}}">
+
+  <ion-header-bar class="bar-subheader item-input-inset" side="left">
+    <button class="button ion-chevron-left button-clear button-assertive" ng-click="goback()">
+      Back
+    </button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h5 class="font-130 text-center"></h5>
+  </ion-header-bar>
+
+  <ion-content class="padding">
+
+    <div class="list card">
+
+      <a  class="item item-icon-left">
+        <i class="icon ion-ios-person"></i>
+        {{user.name}}
+      </a>
+
+
+      <a class="item item-icon-left">
+        <i class="icon ion-home"></i>
+        {{user.address}}
+      </a>
+      <a  class="item item-icon-left">
+        <i class="icon ion-ios-telephone"></i>
+        {{phonename}} {{phonenum}}
+      </a>
+
+    </div>
+  </ion-content>
+
+</ion-view>

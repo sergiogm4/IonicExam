@@ -1,0 +1,14 @@
+{
+  "name": "contactlistapp",
+  "description": "",
+  "main": "",
+  "authors": [
+    "sergiogm4 <sgonzalezmontilla4@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "resolutions": {
+    "angular": "1.5.3"
+  }
+}

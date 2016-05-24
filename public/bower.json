@@ -1,0 +1,14 @@
+{
+  "name": "public",
+  "authors": [
+    "sergiogm4 <sgonzalezmontilla4@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "resolutions": {
+    "angular": "1.5.3"
+  }
+}

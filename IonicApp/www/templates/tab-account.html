@@ -1,0 +1,90 @@
+<ion-view view-title="Manage">
+  <ion-content class="padding">
+
+
+    <div class="card">
+      <h3 class="text-center" style="color: #0c60ee">Create user</h3>
+      <div class="item item-text-wrap">
+
+        <div class="list">
+          <label class="item item-input">
+            <input ng-model="newstudent.name" type="text" placeholder="Name">
+          </label>
+          <label class="item item-input">
+            <input type="text" placeholder="Address" ng-model="newstudent.address">
+          </label>
+          <label class="item item-input">
+            <input type="text" placeholder="Phone name" ng-model="newstudent.phonename">
+          </label>
+          <label class="item item-input">
+            <input type="number" placeholder="Phone number" ng-model="newstudent.phonenum">
+          </label>
+        </div>
+
+        <button class="button button-block button-positive" ng-click="addStudent()">
+          OK
+        </button>
+      </div>
+    </div>
+
+
+
+
+    <div class="card">
+      <h3 class="text-center" style="color: #0c60ee">Create subject</h3>
+      <div class="item item-text-wrap">
+        <label class="item item-input">
+          <input type="text" placeholder="Subject name" ng-model="subject.name">
+        </label>
+
+        <button ng-click="createSubject(subject)" class="button button-block button-positive">
+          OK
+        </button>
+      </div>
+    </div>
+
+
+
+
+    <div class="card">
+      <h3 class="text-center" style="color: #0c60ee">Join user to subject</h3>
+      <div class="item item-text-wrap">
+
+        <div class="list">
+
+          <label class="item item-input item-select">
+            <div class="input-label">
+              Subject
+            </div>
+
+            <select ng-model="tojoin.subject">
+              <option ng-repeat="subject in subjects" value="{{subject.name}}">{{subject.name}}</option>
+            </select>
+
+
+          </label>
+
+          <label class="item item-input item-select">
+            <div class="input-label">
+              Student
+            </div>
+            <select ng-model="tojoin.user">
+              <option ng-repeat="student in students" value="{{student.name}}">{{student.name}}</option>
+            </select>
+          </label>
+
+        </div>
+
+      </div>
+
+      <button ng-click="joinSubject()" class="button button-block button-positive">
+        Join
+      </button>
+    </div>
+
+
+
+
+
+  </ion-content>
+</ion-view>
